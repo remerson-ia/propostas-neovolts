@@ -188,7 +188,22 @@
     .ind .dot { width: 7px; height: 7px; }
     .ind .dot.active { width: 22px; }
     .nav-arr { bottom: 12px; right: 12px; gap: 6px; }
-    .nav-arr button { width: 40px; height: 40px; font-size: 16px; }
+    .nav-arr button {
+    width: 40px;
+    height: 40px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.nav-arr button svg {
+    width: 20px !important;
+    height: 20px !important;
+    display: block;
+    stroke: currentColor;
+    flex-shrink: 0;
+}
+
 
     /* Esconde elementos decorativos que só ocupam espaço no mobile */
     .logo-corner { display: none; }
